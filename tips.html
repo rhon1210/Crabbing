@@ -13,8 +13,48 @@
   gtag('config', 'G-1VHRT9KCKW');
 </script>
 
+  <!-- SITE STYLING -->
+  <style>
+    body {
+      background-color: #7ec8e3;
+      color: #003f5c;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .content-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+    nav a {
+      color: #003f5c;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    button {
+      background-color: #003f5c;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00263d;
+    }
+  </style>
 </head>
+
 <body>
+<div class="content-box">
 
 <h1>Crabbing Tips for Beginners</h1>
 <p>Want to catch more blue crabs? Try these simple tips to boost your success on the water.</p>
@@ -25,14 +65,12 @@
   <li>Drop your traps near structure like pilings or rocks.</li>
 </ul>
 
-<!-- NAVIGATION -->
 <nav>
-  <a href="index.html" onclick="console.log('Nav: Tips → Home')">Home</a> |
-  <a href="gear.html" onclick="console.log('Nav: Tips → Gear')">Crabbing Gear</a> |
+  <a href="index.html" onclick="console.log('Nav: Tips → Home')">Home</a>
+  <a href="gear.html" onclick="console.log('Nav: Tips → Gear')">Crabbing Gear</a>
   <a href="tips.html" onclick="console.log('Nav: Tips → Tips')">Crabbing Tips</a>
 </nav>
 
-<!-- FORM -->
 <h2>Share Your Best Crabbing Tip</h2>
 <form id="tipsForm">
   <label>Your Tip:</label>
@@ -40,7 +78,9 @@
   <button type="submit">Submit</button>
 </form>
 
-<!-- TRACKING SCRIPTS -->
+</div>
+
+<!-- TRACKING -->
 <script>
   document.getElementById("tipsForm").addEventListener("submit", function() {
     console.log("Tips Form Submitted");
