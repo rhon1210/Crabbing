@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crabbing Gear</title>
+
+  <!-- GOOGLE ANALYTICS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+</head>
+<body>
+
+<h1>Essential Crabbing Gear</h1>
+<p>Here’s a quick look at the basic gear you need to start crabbing along the Gulf Coast.</p>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html" onclick="console.log('Nav: Gear → Home')">Home</a> |
+  <a href="gear.html" onclick="console.log('Nav: Gear → Gear')">Crabbing Gear</a> |
+  <a href="tips.html" onclick="console.log('Nav: Gear → Tips')">Crabbing Tips</a>
+</nav>
+
+<!-- REQUIRED TABLE -->
+<h2>Crabbing Gear Comparison</h2>
+<table border="1">
+  <tr><th>Gear Item</th><th>Purpose</th><th>Cost</th></tr>
+  <tr><td>Hand Line</td><td>Simple crabbing from piers</td><td>$5–$10</td></tr>
+  <tr><td>Ring Net</td><td>Beginner-friendly crab catching</td><td>$10–$20</td></tr>
+  <tr><td>Crab Trap</td><td>Passive catching over time</td><td>$20–$40</td></tr>
+</table>
+
+<!-- FORM -->
+<h2>What Gear Do You Use?</h2>
+<form id="gearForm">
+  <label>Your Favorite Gear:</label>
+  <input type="text">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- TRACKING SCRIPTS -->
+<script>
+  document.getElementById("gearForm").addEventListener("submit", function() {
+    console.log("Gear Form Submitted");
+  });
+
+  document.querySelector("button").addEventListener("click", function() {
+    console.log("Button clicked on Gear Page");
+  });
+
+  let startTime = Date.now();
+  window.addEventListener("beforeunload", function() {
+    let timeSpent = Date.now() - startTime;
+    console.log("Time spent on Gear Page:", timeSpent);
+  });
+</script>
+
+</body>
+</html>
