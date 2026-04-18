@@ -2,15 +2,6 @@
 <html>
 <head>
   <title>Crabbing Gear</title>
-</head>
-
-<body style="background-color: lightblue;">
-
-<h1>Crabbing Gear</h1>
-<p>This is page 2.</p>
-
-</body>
-</html>
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VHRT9KCKW"></script>
@@ -22,29 +13,80 @@
   gtag('config', 'G-1VHRT9KCKW');
 </script>
 
+  <!-- SITE STYLING -->
+  <style>
+    body {
+      background-color: #7ec8e3;
+      color: #003f5c;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .content-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+    nav a {
+      color: #003f5c;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    button {
+      background-color: #003f5c;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00263d;
+    }
+    table {
+      width: 100%;
+      background: white;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table th, table td {
+      border: 1px solid #003f5c;
+      padding: 10px;
+    }
+    table th {
+      background-color: #003f5c;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
+<div class="content-box">
 
 <h1>Essential Crabbing Gear</h1>
 <p>Here’s a quick look at the basic gear you need to start crabbing along the Gulf Coast.</p>
 
-<!-- NAVIGATION -->
 <nav>
-  <a href="index.html" onclick="console.log('Nav: Gear → Home')">Home</a> |
-  <a href="gear.html" onclick="console.log('Nav: Gear → Gear')">Crabbing Gear</a> |
+  <a href="index.html" onclick="console.log('Nav: Gear → Home')">Home</a>
+  <a href="gear.html" onclick="console.log('Nav: Gear → Gear')">Crabbing Gear</a>
   <a href="tips.html" onclick="console.log('Nav: Gear → Tips')">Crabbing Tips</a>
 </nav>
 
-<!-- REQUIRED TABLE -->
 <h2>Crabbing Gear Comparison</h2>
-<table border="1">
+<table>
   <tr><th>Gear Item</th><th>Purpose</th><th>Cost</th></tr>
   <tr><td>Hand Line</td><td>Simple crabbing from piers</td><td>$5–$10</td></tr>
   <tr><td>Ring Net</td><td>Beginner-friendly crab catching</td><td>$10–$20</td></tr>
   <tr><td>Crab Trap</td><td>Passive catching over time</td><td>$20–$40</td></tr>
 </table>
 
-<!-- FORM -->
 <h2>What Gear Do You Use?</h2>
 <form id="gearForm">
   <label>Your Favorite Gear:</label>
@@ -52,7 +94,9 @@
   <button type="submit">Submit</button>
 </form>
 
-<!-- TRACKING SCRIPTS -->
+</div>
+
+<!-- TRACKING -->
 <script>
   document.getElementById("gearForm").addEventListener("submit", function() {
     console.log("Gear Form Submitted");
